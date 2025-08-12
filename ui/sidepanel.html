@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Side Panel - On-Page Visual Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidepanel-container">
+        <h2>Visual Editor</h2>
+        
+        <!-- Tab Navigation -->
+        <div class="tab-navigation">
+            <button class="tab-button active" data-tab="inspect">Inspect</button>
+            <button class="tab-button" data-tab="styles">Styles</button>
+            <button class="tab-button" data-tab="presets">Presets</button>
+            <button class="tab-button" data-tab="ai">AI</button>
+            <button class="tab-button" data-tab="history">History</button>
+        </div>
+        
+        <!-- Tab Content Panels -->
+        <div class="tab-content">
+            <!-- Inspect Tab -->
+            <div id="inspect-panel" class="tab-panel active">
+                <h3>Element Inspector</h3>
+                <div class="element-info">
+                    <p>Click on any element on the page to inspect it</p>
+                    <div id="elementDetails">No element selected</div>
+                </div>
+                <div class="inspector-controls">
+                    <button id="startInspecting">Start Inspecting</button>
+                    <button id="stopInspecting">Stop Inspecting</button>
+                    <button id="pingButton" class="ping-btn">Ping Content Script</button>
+                </div>
+            </div>
+            
+            <!-- Styles Tab -->
+            <div id="styles-panel" class="tab-panel">
+                <h3>Style Editor</h3>
+                <div class="style-editor">
+                    <p>Modify CSS properties of selected elements</p>
+                    <div class="style-properties">
+                        <label>Color: <input type="color" id="colorPicker"></label>
+                        <label>Font Size: <input type="number" id="fontSize" min="8" max="72" value="16">px</label>
+                        <label>Background: <input type="color" id="bgColorPicker"></label>
+                    </div>
+                    <button id="applyStyles">Apply Styles</button>
+                </div>
+            </div>
+            
+            <!-- Presets Tab -->
+            <div id="presets-panel" class="tab-panel">
+                <h3>Style Presets</h3>
+                <div class="preset-list">
+                    <p>Quick style presets for common modifications</p>
+                    <div class="preset-buttons">
+                        <button class="preset-btn" data-preset="modern">Modern</button>
+                        <button class="preset-btn" data-preset="classic">Classic</button>
+                        <button class="preset-btn" data-preset="minimal">Minimal</button>
+                        <button class="preset-btn" data-preset="bold">Bold</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- AI Tab -->
+            <div id="ai-panel" class="tab-panel">
+                <h3>AI Commands</h3>
+                <div class="ai-controls">
+                    <p>Describe what you want to change and let AI handle it</p>
+                    <textarea id="aiPrompt" placeholder="Describe what you want to change..."></textarea>
+                    <button id="generatePlan">Generate Plan</button>
+                    <button id="applyAIChanges">Apply Changes</button>
+                </div>
+            </div>
+            
+            <!-- History Tab -->
+            <div id="history-panel" class="tab-panel">
+                <h3>Change History</h3>
+                <div class="history-list">
+                    <p>Track and manage your changes</p>
+                    <div class="history-controls">
+                        <button id="undoLast">Undo Last</button>
+                        <button id="redoLast">Redo Last</button>
+                        <button id="clearHistory">Clear History</button>
+                    </div>
+                    <div id="historyItems">
+                        <p class="no-history">No changes yet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>
