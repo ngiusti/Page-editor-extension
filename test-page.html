@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page for AI Editor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .test-section {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #e9ecef;
+            border-radius: 6px;
+            background: #f8f9fa;
+        }
+        .test-section h2 {
+            color: #34495e;
+            margin-bottom: 15px;
+        }
+        .test-button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 10px 10px 0;
+        }
+        .test-button:hover {
+            background: #2980b9;
+        }
+        .test-input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+            margin: 10px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        .test-text {
+            color: #666;
+            line-height: 1.6;
+            margin: 15px 0;
+        }
+        .color-box {
+            width: 100px;
+            height: 60px;
+            border: 2px solid #333;
+            border-radius: 8px;
+            margin: 10px;
+            display: inline-block;
+        }
+        .red { background-color: #e74c3c; }
+        .blue { background-color: #3498db; }
+        .green { background-color: #27ae60; }
+        .yellow { background-color: #f39c12; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Editor Test Page</h1>
+        
+        <div class="test-section">
+            <h2>Buttons</h2>
+            <button class="test-button" id="primary-btn">Primary Button</button>
+            <button class="test-button" style="background: #e74c3c;">Secondary Button</button>
+            <button class="test-button" style="background: #27ae60;">Success Button</button>
+        </div>
+        
+        <div class="test-section">
+            <h2>Form Elements</h2>
+            <input type="text" class="test-input" placeholder="Enter your name" value="John Doe">
+            <input type="email" class="test-input" placeholder="Enter your email" value="john@example.com">
+            <textarea class="test-input" rows="3" placeholder="Enter your message">This is a test message for the AI editor.</textarea>
+        </div>
+        
+        <div class="test-section">
+            <h2>Text Content</h2>
+            <p class="test-text">This is a paragraph with some sample text. You should be able to inspect and modify this content using the AI editor extension.</p>
+            <p class="test-text">Here's another paragraph with different styling. This text has a different color and size to test various CSS properties.</p>
+        </div>
+        
+        <div class="test-section">
+            <h2>Color Elements</h2>
+            <div class="color-box red"></div>
+            <div class="color-box blue"></div>
+            <div class="color-box green"></div>
+            <div class="color-box yellow"></div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Complex Elements</h2>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <img src="https://via.placeholder.com/150x100/9b59b6/ffffff?text=Image" alt="Test Image" style="border-radius: 8px;">
+                <div>
+                    <h3 style="color: #8e44ad; margin: 0 0 10px 0;">Image Caption</h3>
+                    <p style="margin: 0; color: #666;">This is a caption for the test image above.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="test-section">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Open the AI Editor extension side panel</li>
+                <li>Go to the "Inspect" tab</li>
+                <li>Click "Start Inspecting"</li>
+                <li>Hover over elements to see the blue highlight</li>
+                <li>Click on any element to select it (red highlight)</li>
+                <li>View element details in the side panel</li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>

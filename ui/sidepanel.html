@@ -26,12 +26,17 @@
                 <h3>Element Inspector</h3>
                 <div class="element-info">
                     <p>Click on any element on the page to inspect it</p>
+                    <div class="inspector-info">
+                        <p><strong>Auto-Check:</strong> The "Start Inspecting" button automatically verifies the content script is ready before enabling inspection.</p>
+                        <p><strong>Manual Test:</strong> Use "Manual Ping Test" to verify content script status independently.</p>
+                    </div>
                     <div id="elementDetails">No element selected</div>
                 </div>
                 <div class="inspector-controls">
-                    <button id="startInspecting">Start Inspecting</button>
+                    <button id="startInspecting">Start Inspecting (Auto-Check)</button>
                     <button id="stopInspecting">Stop Inspecting</button>
-                    <button id="pingButton" class="ping-btn">Ping Content Script</button>
+                    <button id="refreshOverlay" class="refresh-btn">Refresh Overlay</button>
+                    <button id="pingButton" class="ping-btn">Manual Ping Test</button>
                 </div>
             </div>
             

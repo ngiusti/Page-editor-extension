@@ -168,6 +168,24 @@ body {
   margin-bottom: 15px;
 }
 
+.inspector-info {
+  background: #e8f4fd;
+  border: 1px solid #bee5eb;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.inspector-info p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #0c5460;
+}
+
+.inspector-info strong {
+  color: #0a4b53;
+}
+
 #elementDetails {
   color: #666;
   font-style: italic;
@@ -176,6 +194,102 @@ body {
   background: white;
   border-radius: 3px;
   border: 1px solid #ddd;
+  min-height: 60px;
+}
+
+.info-message {
+  color: #3498db;
+  font-weight: 500;
+}
+
+.element-info-display {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.element-header {
+  margin-bottom: 10px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.element-header strong {
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+.element-id {
+  background: #3498db;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.element-class {
+  background: #9b59b6;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  margin-left: 8px;
+  font-size: 11px;
+  font-weight: normal;
+}
+
+.element-content {
+  margin-bottom: 10px;
+}
+
+.element-content > div {
+  margin-bottom: 5px;
+}
+
+.element-content strong {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.element-selector code {
+  background: #f8f9fa;
+  padding: 2px 4px;
+  border-radius: 2px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 11px;
+  color: #e74c3c;
+}
+
+.element-position {
+  color: #7f8c8d;
+}
+
+.element-styles {
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #e9ecef;
+}
+
+.style-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.style-grid span {
+  font-size: 11px;
+  color: #666;
+}
+
+.color-preview {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin-left: 4px;
+  vertical-align: middle;
 }
 
 .inspector-controls button {
@@ -192,6 +306,12 @@ body {
 
 .inspector-controls button:hover {
   background: #229954;
+}
+
+.inspector-controls button:disabled {
+  background: #bdc3c7;
+  cursor: not-allowed;
+  opacity: 0.7;
 }
 
 .inspector-controls button:last-child {
@@ -214,6 +334,23 @@ body {
 }
 
 .ping-btn:disabled {
+  background: #bdc3c7 !important;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* Refresh button specific styling */
+.refresh-btn {
+  background: #27ae60 !important;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.refresh-btn:hover {
+  background: #229954 !important;
+}
+
+.refresh-btn:disabled {
   background: #bdc3c7 !important;
   cursor: not-allowed;
   opacity: 0.7;
